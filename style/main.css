@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.container{
+    margin: 0;
+    display: flex;
+    background-color: bisque;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container div {
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
+.container iframe{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container h3{
+    color: cadetblue;
+    text-transform: uppercase;
+}
+.container p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    
+}
+.note {
+    width: auto;
+}
