@@ -1,35 +1,125 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-.container{
-    margin: 0;
-    display: flex;
-    background-color: bisque;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.container div {
-    padding: 20px;
+/*styles similar similar to all pages*/
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display+SC|Sen&display=swap');
+body{
     text-align: center;
-    width: auto;
+    font-weight: bolder;
+    font-family: 'Sen', sans-serif;
+    
+   
 }
-.container iframe{
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2px;
+    grid-template-areas: 
+
+    "header header header header"
+    "main main main main "
+    "main main main main "
+    "main main main main "
+    "main main main main "
+    "footer footer footer footer "
+    "footer footer footer footer "
+    "footer footer footer footer ";
 }
-.container h3{
-    color: cadetblue;
-    text-transform: uppercase;
+.nav{
+justify-content: space-around;
 }
-.container p{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+.nav ul li{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px 41px 10px 47px;
+-moz-border-radius: 6px 41px 10px 47px;
+-webkit-border-radius: 6px 41px 10px 47px;
+border: 2px solid grey;
+
+}
+
+
+.header{
+    grid-area: header;
+    background-color: teal;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    background-image: image("image/frontend.jfif")
     
 }
-.note {
-    width: auto;
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color:#020024;
+    text-align: left;
+    color: #f2f2f2;
+    line-height: 2em;
+    
+}
+.language{
+    
+    width: 40%;
+}
+.nav{
+    float: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.8;
+  }
+  li {
+    float: left;
+  }
+  
+  
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.logo{
+    justify-self: left;
+    align-self: center;
+    width: 20%;
+    
+}
+.framework{
+    justify-self: right;
+    width: 40%;
+}
+/*styles unique to  frontend.html*/
+h3{
+    color: #402b4e;
+    justify-self: center;
+}
+h2{
+    font-family: 'Playfair Display SC', serif;
+}
+a{
+    text-decoration: none;
+}
+.footer a {
+    color: #fd1d1d;
 }
