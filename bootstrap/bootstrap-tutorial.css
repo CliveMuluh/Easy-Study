@@ -17,3 +17,7 @@ body{
 #cover-caption {
     width: 100%;
 }
+.card img{
+    height: 250px;
+    padding-top: 10px;
+}
