@@ -3,7 +3,7 @@ body{
     color: white;
     
 }
-#container{
+#container-wrap{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
